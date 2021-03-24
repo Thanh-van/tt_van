@@ -129,43 +129,29 @@ a{
   display: block;
 }
 .banner{
-  position: relative;
-  display: flex;
   height: 250px;
-  justify-content: center;
-  align-items: center;
+  background: url(image/banner.jpg);
 }
-.banner .slider{
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
+.banner,.trusts{
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
-.banner .text-baner{
-  position: absolute;
-  height: 86px;
-  width: 355px;
-  background: black;
-  opacity: 40%;
-  z-index: 1;
-  border: 2px solid #ffffff;
-}
-.banner h1{
-  position: absolute;
-  z-index: 2;
+.banner > h1{
   font-weight: 500;
   font-size: 50px;
+  display: flex;
+  margin: 0 15px !important; 
+  padding-top: 81px;
+  text-align: center;
+  padding-bottom: 81px;
+  justify-content: center;
+  
 }
-.banner .che{
-  position: absolute;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 30%;
-  background: black;
-}
-.banner h1{
-  position: absolute;
+.banner h1 span{
+  padding: 14px 40px 14px 40px;
+border: 2px solid #fff;
+background: rgba(56, 56, 61, 0.6);
 }
 .main-click{
   height: 60px;
@@ -333,12 +319,12 @@ a{
 .w-left{
   max-width: 500px;
 }
-.white-block h2{
+.white-block h2,.trusts-text h2,.fun-events h2{
   font-weight: bold;
   font-size: 40px;
   color: #e89719;
 }
-.white-block hr{
+.white-block hr,.trusts-text hr,.fun-events hr{
   margin-top: 20px !important;
   margin-bottom: 40px !important;
   width: 50px;
@@ -346,7 +332,7 @@ a{
   background:  #e89719;
   border: none;
 }
-.white-block p{
+.white-block p,.fun-events p{
   font-size: 14px;
   color: #696969;
   line-height: 30px;
@@ -355,14 +341,131 @@ a{
 .white-block{
   padding-bottom: 75px;
 }
+
 .trusts{
-  height: 410px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 410px;
+  background: url(image/banner2.jpg); 
 }
-.trusts img{
-  position: absolute;
-  z-index: -1;
+.trusts-text hr{
+  
+  margin: auto !important;
+ margin-bottom: 45px !important;
+}
+.trusts-text{
+  background: #efeeee;
+  text-align: center;
+  width: 970px;
+  height: 250px;
+}
+.trusts-text h2{
+  margin-top: 43px !important;
+  margin-bottom: 20px !important;
+}
+.trusts-text p{
+  color: #696969;
+}
+.fun-events{
+  display: block;
+  padding-bottom: 75px;
+}
+.fun-events .with-content
+{
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fun .f-col1:first-child,.events .f-col1:last-child{
+  width: 500px;
+ 
+}
+.fun{
+  margin-bottom: 25px !important;
+}
+.fun-events .f-col1{
+  display: block;
+  width: 48.7%;
+}
+.fun-events p{
+  line-height: 1.7em;
+}
+.footer .f-main{
+  background: #373737;
+  height: 325px;
+}
+.footer .with-content{
+  display: flex;
+  align-items: center;
+  
+}
+.footer .with-content .col-md-4{
+  width: 31.624%;
+  padding-top: 40px;
+  margin-right: 30px !important;
+}
+.footer .with-content .col-md-4:last-child{
+  margin-right: 0 !important;
+}
+.footer  .f-main-text h3{
+  margin-bottom: 20px !important;
+}
+.footer .f-context{
+  margin-bottom: 10px !important;
+}
+.footer .label{
+  font-weight: 500;
+  font-size: 14px;
+  color: #b4b4b4;
+  padding-bottom: 5px;
+}
+.footer i{
+  margin-right: 15px !important;
+  color: #e89719;
+}
+.footer p{
+  line-height: 1.7em;
+}
+.footer .f-main-text .text{
+  margin-left: 29px !important;
+  
+}
+.fls{
+  padding-top: 15px;
+}
+.fls h3{
+  margin-right: 16px !important;
+  float: left;
+}
+.fls a{
+  float: left;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  margin-right: 8px !important;
+  border-radius: 50px;
+  border: 1px solid #7b7f80;
+}
+.fls a:last-child{
+  margin-right: 0!important;
+}
+.fls i{
+  padding-left: 15px;
+  text-align: center;
+  color: #7b7f80;
+  font-size: 14px;
+}
+.footer .f-downt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242424;
+  height: 60px;
+}
+.footer p{
+  color: #6d6d6d;
 }
