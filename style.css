@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@font-face{
+    font-family: "Myriad-Pro";  
+    src: url(http://www.anaveer.in/honda/font/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
 *{
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -64,12 +69,16 @@ p{
   padding-right: 12px;
   
 }
+.menu{
+  display: block;
+  position: relative;
+}
 .menu .logo{
   padding-top: 15px;
   max-width: 100px;
   float: left;
   display: block;
-  margin-right: 70px !important;
+  margin-right: 70px;
 }
 .main-menu{
   margin-top: 30px !important;;
@@ -80,6 +89,15 @@ p{
 }
 .main-menu> li:last-child{
   padding: 0;
+}
+.div-bar{
+  float: right;
+  display: none;
+  text-align: center;
+}
+.div-bar i{
+  margin-top: 35px;
+  font-size: 20px;
 }
 .main-menu li a{
   font-weight: 500;
@@ -127,7 +145,7 @@ a:hover{
   transition: all 0.2s;
   visibility: visible;
 }
-.nav-link,.donate{
+.nav-link{
   float: left;
 }
 .sub-menu li{
@@ -136,11 +154,7 @@ a:hover{
 .sub-menu li:first-child{
   padding-top: 22px !important;
 }
-.donate{
-  margin-left: 30px !important;;
-   margin-top: 40px !important;
-}
-.donate a{
+.main-menu .donate a{
  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -157,6 +171,7 @@ a:hover{
 }
 .seach i{
   font-size: 18px;
+  /*! font-weight: 400; */
 }
 .Main{
   background: #ffffff;
@@ -171,6 +186,28 @@ a:hover{
 .banner{
   position: relative;
   height: 500px;
+}
+.next-pev{
+  top: 42%;
+  position: relative;
+}
+.next-pev .pev{
+  
+  right: 5%;
+  position: absolute;
+}
+.next-pev .next{
+  left: 5%;
+  position: absolute;
+}
+.next-pev i{
+  color: #ffffff;
+  background: #4f4f55;
+  opacity: 20%;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 24px 28px;
+  background: black;
 }
 .banner .b-text{
   z-index: 1;
@@ -204,6 +241,7 @@ a:hover{
   border-radius: 45px;
   padding: 20px 45px;
   background: #e89719;
+  font-family: "Myriad-Pro";
 }
 .banner img{
   height: 500px;
@@ -229,10 +267,11 @@ a:hover{
   margin: 0 auto !important;
 }
 .a-text p{
-  line-height: 1.8;
+  line-height: 1.6;
   text-align:  center;
   font-size: 16px;
   color: #494949;
+  padding-bottom: 14px;
 }
 .about .col-md-3,.our .col-md-3{
   max-width: 270px;
@@ -249,10 +288,11 @@ a:hover{
   margin-bottom: 47px !important;
   height: 1px;
   background: #e89719; 
+  border: none;
 }
 .about-percent{
-  box-shadow: 2px 2px 2px 2px #f7f7f7;
-  margin-top: 35px;
+  box-shadow: 5px 5px 5px 5px #f2f2f2;
+  margin-top:   5px !important;
   text-align: center;
   padding: 20px 20px;
   border-radius: 0.5rem;
@@ -269,10 +309,14 @@ a:hover{
   font-size: 16px;
   color: #262626;
 }
-.active{
+.about-percent:hover {
   background: #b32317;
+  color: #ffffff;
 }
-.active h2,.active h3{
+.about-percent:hover h2,.about-percent:hover h3{
+  color: #ffffff;
+}
+.active h2{
   color: #ffffff;
 }
 .our{
@@ -351,7 +395,7 @@ a:hover{
 .view{
   background: #e89719;
   width: 190px;
-  padding: 15px 0;
+  padding: 8px 0;
   margin: 0 auto !important;
   border-radius: 5rem;
   text-align: center;
@@ -366,6 +410,7 @@ a:hover{
 .up-box p{
   font-size: 16px;
   font-weight: 400;
+  margin-top: 6px !important;
 }
 .up-red h3{
   font-weight: bold;
@@ -397,11 +442,11 @@ a:hover{
 }
 .l-text a{
   border-radius: 0.3rem 0.3rem;
-  top: -25px;
+  top: -13.5px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400px;
-  padding: 9px 15px;
+  padding: 4px 15.5px;
   background: #b32317;
   position: absolute;
 }
@@ -429,8 +474,10 @@ a:hover{
 }
 .l-text p{
   
-  margin-top: 17px !important;;
+  margin-top: 17px !important;
   color: #555555;
+  overflow: hidden;
+  height: 85px;
 }
 .l-active h5{
   color: #e89719;
@@ -446,6 +493,19 @@ a:hover{
   color: #6e6e6e;
   font-weight: 300;
   font-size: 14px;
+}
+.p-text-center p i:before{
+  position: absolute;
+  content: url('\image/icon-left.png');
+  z-index: -1;
+  top: -10px;
+  margin-left: -25px;
+}
+.p-text-center p i:after{
+  position: absolute;
+  content: url('\image/icon-left.png');
+  z-index: -1;
+  margin-left: 25px;
 }
 .f-top{
   display: block;
@@ -529,12 +589,12 @@ form input[type="submit"]
   margin-right: 0 !important;
 }
 .f-main-text{
-  padding-top: 46px;
+  padding-top: 48px;
 }
 .f-main-text h3{
   font-weight: 500;
   font-size: 18px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   color: #ffffff;
 }
 .icon{
@@ -550,9 +610,10 @@ form input[type="submit"]
   clear: both;
   display: block;
   float: left;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
 }
 .text p{
+  line-height: 1.65em;
   color: #7b7f80;
 }
 .text .label{
@@ -597,3 +658,29 @@ form input[type="submit"]
   color: #6d6d6d;
   padding-top: 19px;
 }
+@media only screen and (max-width: 1340px) {
+   
+	.with-content{
+    width: 80%;
+	}
+	.img img{
+		width: 100%;
+	}
+  .main-menu{
+    display: none;
+  }
+  .div-bar{
+    display: block;
+  }
+  .donate{
+  margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .logo{
+    margin-right: 2% !important;
+    display: block;
+  }
+  .seach{
+    margin-left: 1%;
+    float: left;
+  }
